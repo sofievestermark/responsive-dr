@@ -1,0 +1,352 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px 'raleway', sans-serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+/* Text */
+
+h1 {
+    font-family: 'lora';
+    font-size: 4vw;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom: ridge;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: 'lora';
+    font-size: 2em;
+    padding: 2%;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'raleway';
+    font-size: 1.5em;
+    padding: 2%;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'raleway';
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+h6 {
+    font-family: 'raleway';
+    font-size: 0.8em;
+    padding-left: 2%;
+}
+
+p {
+    font-family: 'raleway';
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+    background-color: white;
+    clear: both;
+    margin-bottom: 5%
+}
+
+
+/*navigation her*/
+
+
+.burger {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+#navigation-icon {
+    display: inline-block;
+    float: right;
+    padding-right: 2%;
+}
+
+#navigation-desktop {
+    display: none;
+}
+
+#navigation-mobile {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#navigation-mobile li {
+    padding: 0.8em;
+    border-bottom: 1px solid #ccc;
+}
+
+#navigation-mobile li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#navigation-mobile li a:hover {
+    text-decoration: underline;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+main {
+    text-align: left;
+}
+
+img {
+    width: 90%;
+}
+
+#logo2 {
+    max-width: 60px;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    height: auto;
+    background: black;
+    text-align: right;
+    border-top-style: ridge;
+    border-top-color: black;
+    color: white;
+}
+
+
+/* default= mobile setting ends here*/
+
+/* small tablet setting*/
+
+@media only screen and (min-width: 500px) {
+    /* Header */
+    header {
+        background-color: #FFF;
+        /* Set the background color to white */
+        
+    }
+
+    /* Body */
+    body {
+        /* Set background color to a light gray (whitesmoke) */
+        background-color:whitesmoke ;
+    }
+
+    /* Images */
+    #dumperimg {
+        /* Set width to 60%, padding of 2%, float to right, and clear to right */
+      width: 60%;
+      padding: 2%;
+      float: right;
+      clear: right;
+    }
+
+    #trumpimg, #designskoleimg {
+        /* Set width to 60%, padding of 2%, float to the left and clear to left */
+        width: 60%;
+        padding: 2%;
+        float: right;
+        clear: right;
+    }
+
+    #designskoleimg {
+        /* Set width to 60%, padding of 2%, float to the right and clear to right */
+        width: 60%;
+        padding: 2%;
+        float: right;
+        clear: right;
+    }
+
+
+
+    /* Logo */
+    #logo2 {
+        /* Set max-width to 60px */
+        max-width: 60px;
+    }
+
+
+    
+}
+
+
+
+    /* tablet setting*/
+    /* set min width to 700 pixels */
+    @media only screen and ( min-width: 700px ) {
+        /* Header */
+        header {
+            /* Set background color to black and height to 30px */
+            background-color: black;
+            height: 30px;
+        }
+    
+        /* Body */
+        body {
+            /* Set background color to white */
+            background-color: white;
+        }
+    
+        /* Navigation */
+        #navigation-icon {
+            /* Hide navigation icon */
+            display: none;
+        }
+    
+        #navigation-desktop {
+            /* Show desktop navigation (hint value Display: block) and align text to the right */
+            display: block; 
+            text-align: right;
+        }
+    
+        #navigation-desktop li {
+            /* Display items inline */
+            display: inline;
+        }
+    
+        #navigation-desktop li a {
+            /* Set color to white, remove underline, and add font size 1.6rem, margin 2%, and padding 2% */
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin: 2%;
+            padding: 2%;
+        }
+    
+        #navigation-desktop li a:hover {
+            /* Set underline on hover */
+            text-decoration: underline;
+        }
+    
+        #navigation-mobile {
+            display: none;
+        }
+
+        #logo {
+            max-height: 30px;
+            max-width: 130px;
+            float: left;
+        }
+
+
+        /* Footer */
+        footer {
+            /* Set background color to black and text color to white */
+            background-color: #000;
+            color:#FFF;
+        }
+    
+        /* Content */
+        section {
+            /* Add padding of 2% */
+          padding: 2%;
+        }
+    
+        /* Flex Container */
+        .flex-container {
+            /* Enable flex display and flex-wrap */
+         display: flex;
+         flex-wrap: wrap;
+        }
+    
+        article {
+            /* Set width to 46% and margin to 1% */
+           width: 46%;
+           margin: 1%;
+        }
+
+        #dumperimg {
+            width: 100%;
+            padding: 2%;
+            clear: left;
+            float: left;
+        }
+
+        #trumpimg {
+            float: right;
+        }
+
+        #designskole {
+            width: 200%;
+        }
+
+    }
+
+    /* desktop setting */
+    /* set min width to 1100 pixels */
+    @media only screen and (min-width: 1100px) {
+        header {
+            background-color: black;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        #wrapper {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #logo {
+            width: 160px;
+            float: left;
+        }
+
+        #navigation-desktop li a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 2%;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        article {
+            width: 31%;
+            margin: 1%; display: block;
+        }
+        
+        #designskole {
+            width: 100%;
+        }
+
+    
+    
+    }
